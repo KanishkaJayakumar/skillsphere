@@ -1,0 +1,8 @@
+[35m.env.example[m[36m:[mAWS_[1;31mACCESS[m_KEY_ID=your_aws_[1;31maccess[m_key
+[35m.env.example[m[36m:[mAWS_SECRET_[1;31mACCESS[m_KEY=your_aws_secret_key
+[35mdocker-compose.yml[m[36m:[m      AWS_[1;31mACCESS[m_KEY_ID: ${AWS_[1;31mACCESS[m_KEY_ID}
+[35mdocker-compose.yml[m[36m:[m      AWS_SECRET_[1;31mACCESS[m_KEY: ${AWS_SECRET_[1;31mACCESS[m_KEY}
+[35mskillsphere_backend/src/main/java/com/example/skillsphere_backend/controllers/CourseController.java[m[36m:[mimport org.springframework.security.[1;31maccess[m.prepost.PreAuthorize;
+[35mskillsphere_backend/src/main/java/com/example/skillsphere_backend/controllers/EnrollmentController.java[m[36m:[mimport org.springframework.security.[1;31maccess[m.prepost.PreAuthorize;
+[35mskillsphere_backend/src/main/java/com/example/skillsphere_backend/services/S3Service.java[m[36m:[m    public S3Service(@Value("${aws.[1;31maccess[m.key}") String [1;31maccess[mKey,
+[35mskillsphere_backend/src/main/java/com/example/skillsphere_backend/services/S3Service.java[m[36m:[m        AwsBasicCredentials credentials = AwsBasicCredentials.create([1;31maccess[mKey, secretKey);
