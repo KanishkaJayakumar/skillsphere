@@ -1,0 +1,68 @@
+/* ===== HERO SECTION ===== */
+
+.hero {
+  position: relative;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvquTK6Pl3a2K-O4L0Oxl3JUKMREkBVUSOTg&s') center/cover no-repeat;
+  color: white;
+  height: 90vh;
+  overflow: hidden;
+}
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(9, 9, 9, 0.55);
+}
+.hero .content {
+  position: relative;
+  z-index: 2;
+}
+
+/* ===== COURSE CARDS ===== */
+.course-card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.card-img-top {
+  border-radius: 15px 15px 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ===== FEATURES ===== */
+.features-section i {
+  transition: transform 0.3s ease;
+}
+.features-section i:hover {
+  transform: scale(1.2);
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonials {
+  background: linear-gradient(to right, #1a77db, #4b8df1);
+  color: white;
+}
+.testimonials .p-4 {
+  background: white;
+  color: #333;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.testimonials .p-4:hover {
+  transform: translateY(-8px);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #111;
+  color: #ccc;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+.footer p {
+  margin: 0;
+}

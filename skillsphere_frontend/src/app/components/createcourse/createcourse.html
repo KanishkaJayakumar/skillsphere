@@ -1,0 +1,21 @@
+<div class="container mt-4">
+  <h2>Create Course</h2>
+  <form (ngSubmit)="createCourse()">
+    <div class="mb-3">
+      <label class="form-label">Course Title</label>
+      <input type="text" class="form-control" [(ngModel)]="course.courseTitle" name="title" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Course Description</label>
+      <textarea class="form-control" [(ngModel)]="course.courseDescription" name="description" required></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Video URL</label>
+      <input type="url" class="form-control" [(ngModel)]="course.courseVideourl" name="videourl" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create Course</button>
+  </form>
+</div>

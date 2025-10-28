@@ -1,0 +1,29 @@
+<div class="course-details-container">
+  <h2 class="course-title">{{ enrollment?.course.courseTitle }}</h2>
+  <p class="course-description">{{ enrollment?.course.courseDescription }}</p>
+
+  <div class="video-container" *ngIf="enrollment?.course.courseVideourl">
+    <video
+      #videoPlayer
+      width="100%"
+      height="400"
+      controls
+      (timeupdate)="onVideoProgress(videoPlayer)">
+      <source [src]="enrollment?.course.courseVideourl" type="video/mp4" />
+    </video>
+  </div>
+
+  <div class="progress-section mt-3">
+    <p class="progress-text">Progress: {{ progress | number:'1.0-2' }}%</p>
+    <div class="progress">
+      <div class="progress-bar" [style.width.%]="progress"></div>
+    </div>
+  </div>
+
+  <button
+    *ngIf="progress >= 100"
+    (click)="downloadCertificate()"
+    class="btn btn-success mt-4">
+    🎓 Download Certificate
+  </button>
+</div>

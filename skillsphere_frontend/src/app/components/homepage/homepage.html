@@ -1,0 +1,85 @@
+<!-- HERO SECTION -->
+<div class="hero d-flex flex-column justify-content-center align-items-center text-center">
+  <div class="overlay"></div>
+  <div class="content">
+    <h1 class="display-4 fw-bold mb-3 animate__animated animate__fadeInDown">
+      Learn. Grow. Excel. 🌱
+    </h1>
+    <p class="lead mb-4 animate__animated animate__fadeInUp">
+      Join <strong>SkillSphere</strong> — where learning meets opportunity.
+    </p>
+    <div>
+      <button class="btn btn-lg btn-primary me-3" (click)="goToCourses()">Explore Courses</button>
+      <button class="btn btn-lg btn-outline-light" (click)="goToLogin()">Get Started</button>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURED COURSES -->
+<section class="container py-5">
+  <h2 class="text-center mb-5 fw-bold">Featured Courses</h2>
+  <div class="row g-4">
+    <div class="col-md-4" *ngFor="let course of featuredCourses">
+      <div class="card h-100 shadow-sm course-card">
+        <img [src]="course.img" class="card-img-top" alt="Course image" />
+        <div class="card-body">
+          <h5 class="card-title">{{ course.title }}</h5>
+          <p class="card-text text-muted">{{ course.desc }}</p>
+          <button class="btn btn-outline-primary btn-sm" (click)="goToCourses()">View Course</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section class="features-section py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-4">Why Choose SkillSphere?</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <i class="bi bi-laptop display-4 text-primary"></i>
+        <h5 class="mt-3">Learn Anywhere</h5>
+        <p>Access lessons anytime from any device — truly flexible learning.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-person-check display-4 text-primary"></i>
+        <h5 class="mt-3">Expert Mentors</h5>
+        <p>Learn directly from professionals and domain experts.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-patch-check display-4 text-primary"></i>
+        <h5 class="mt-3">Certification</h5>
+        <p>Earn certificates to prove your skills and grow your career.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5">What Our Learners Say</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="p-4 shadow-sm rounded bg-white">
+          <p>"SkillSphere transformed my career! The instructors were top-notch."</p>
+          <strong>— Ananya, Software Engineer</strong>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 shadow-sm rounded bg-white">
+          <p>"The best online platform for practical, hands-on learning."</p>
+          <strong>— Ravi, Cloud Architect</strong>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 shadow-sm rounded bg-white">
+          <p>"I landed a job thanks to the Full Stack course here. Highly recommend!"</p>
+          <strong>— Meera, Web Developer</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

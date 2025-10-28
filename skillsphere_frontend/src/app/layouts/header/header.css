@@ -1,0 +1,82 @@
+/* ===== Navbar Base ===== */
+.custom-navbar {
+  background: linear-gradient(90deg, #2678eb, #0f74e0);
+  /* padding: 0.7rem 2rem; */
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.backbutton{
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.logo {
+  height: 35px;
+  width: 35px;
+  object-fit: contain;
+}
+
+.brand-text {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Nav Links ===== */
+.nav-link {
+  color: #e6e6e6 !important;
+  margin: 0 10px;
+  transition: color 0.3s, transform 0.2s;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+.active-link {
+  border-bottom: 2px solid #ffffff;
+}
+
+/* ===== Buttons ===== */
+.btn-outline-light {
+  border: 1px solid white;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background: white;
+  color: #007bff !important;
+}
+
+.btn-light {
+  background: #ffffff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+  background: #f1f1f1;
+  color: #0056d2 !important;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .nav-item {
+    margin: 10px 0;
+  }
+  .btn {
+    width: 80%;
+    margin: auto;
+  }
+}
